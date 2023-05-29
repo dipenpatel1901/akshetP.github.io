@@ -1,0 +1,75 @@
+<footer class="site-footer">
+
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1 social-links">
+        <h4>CONTACT</h4>
+
+        {% for contact in site.data.footer.contact %}
+
+          {% comment %}{% assign contact_icon_path = "/assets/img/icons/" | append: contact.name | downcase | append: ".png" | absolute_url %}
+          <img
+            src="{{ contact_icon_path }}"
+            alt="{{ contact.name | downcase }}"
+          />{% endcomment %}
+          <span class="wrap-link contact">
+            <i class="{{ contact.icon | downcase }} fa-fw" aria-hidden="true"></i>
+            <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link"  target="_blank">
+              {% if contact.value and contact.value != "" and contact.value != nil %}
+                {{ contact.value }}
+              {% else %}
+                {{ contact.name }}
+              {% endif %}
+            </a>
+          </span>
+          <br />
+
+        {% endfor %}
+
+        <span class="wrap-link contact">
+          <i class="fa fa-copyright fa-fw" aria-hidden="true"></i> trunc8, Eliott Vincent
+        </span>
+        <br />
+
+      </div>
+
+      <div class="footer-col footer-col-2 social-links">
+        <h4>FOLLOW</h4>
+
+        {% for follow in site.data.footer.follow %}
+          <span class="wrap-link follow">
+
+            {% comment %}{% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
+            <img
+              src="{{ follow_icon_path }}"
+              alt="{{ follow.name | downcase }}"
+            />{% endcomment %}
+            {% comment %}
+              Courtesy:
+              https://stackoverflow.com/questions/25797627/why-is-font-awesome-not-working-on-my-jekyll-built-github-site
+            {% endcomment %}
+            <i class="fa fa-{{ follow.name | downcase }} fa-fw" aria-hidden="true"></i>
+            <a href="{{ follow.link }}" target="_blank">
+              {% if follow.value and follow.value != "" and follow.value != nil %}
+                {{ follow.value }}
+              {% else %}
+                {{ follow.name }}
+              {% endif %}
+            </a>
+          </span>
+
+          {% assign mod = forloop.index | modulo: 2 %} {% if mod == 0 %}
+            <br />
+          {% endif %}
+
+        {% endfor %}
+      </div>
+
+  <a id="button"/>
+      
+    </div>
+  </div>
+</footer>
+
+{% include wechat-widget.html %}
