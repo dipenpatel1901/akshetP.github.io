@@ -220,6 +220,22 @@ a:hover {
   transition: all 500ms ease;
 }
 
+.blog-button {
+          background-color: rgb(84, 84, 244);
+          border: 1px solid black;
+          color: white;
+          font-size: 16px;
+          padding: 10px;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+
+        .blog-button:hover {
+          background-color: green;
+          color: white;
+          box-shadow: 0 0 5px 0px #000000;
+        }
+
 .socials .ico-circle:hover {
   background-color: #0078ff;
   color: #fff;
