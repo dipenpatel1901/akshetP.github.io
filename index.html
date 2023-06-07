@@ -1264,6 +1264,30 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDBFaIKorY8R_CmPuMznOX2rmxLz4CNDxM",
+      authDomain: "akshet-patel-portfolio.firebaseapp.com",
+      projectId: "akshet-patel-portfolio",
+      storageBucket: "akshet-patel-portfolio.appspot.com",
+      messagingSenderId: "378818148084",
+      appId: "1:378818148084:web:fbe51345da3a498bd850a1",
+      measurementId: "G-TDNZV7J7W9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   
 </body>
 </html>
