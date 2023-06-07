@@ -1085,99 +1085,105 @@
         </section><!-- End Experiences Section -->
         
     <!-- ======= Contact Section ======= -->
-    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="contact-mf">
-                <div id="contact" class="box-shadow-full">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="title-box-2">
-                        <h5 class="title-left">
-                          Send Message
-                        </h5>
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+  <div class="overlay-mf"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="contact-mf">
+          <div id="contact" class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    Send Message
+                  </h5>
+                </div>
+                <div>
+                  <form action="https://formspree.io/f/xrgvwoaw" method="POST" class="php-email-form">
+                    <div class="row">
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+                          <div class="validate"></div>
+                        </div>
                       </div>
-                      <div>
-                        <form action="https://formspree.io/f/xrgvwoaw" method="POST" class="php-email-form">
-                          <div class="row">
-                            <div class="col-md-12 mb-3">
-                              <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
-                                <div class="validate"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                              <div class="form-group">
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
-                                <div class="validate"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                              <div class="form-group">
-                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars for the subject" required />
-                                <div class="validate"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
-                                <div class="validate"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-12 text-center mb-3">
-                              <div class="loading">Loading</div>
-                              <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="col-md-12 text-center">
-                              <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                            </div>
-                          </div>
-                        </form>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars for the subject" required />
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 text-center mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                      </div>
+                      <div class="col-md-12 text-center">
+                        <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                       </div>
                     </div>
-                    <script>
-                      const form = document.querySelector('.php-email-form');
-                      const submitButton = document.querySelector('.php-email-form button[type="submit"]');
-                      const sentMessage = document.querySelector('.sent-message');
-                  
-                      form.addEventListener('submit', function (event) {
-                        event.preventDefault();
-                  
-                        // Display loading message
-                        const loading = form.querySelector('.loading');
-                        loading.style.display = 'block';
-                  
-                        // Disable submit button to prevent duplicate submissions
-                        submitButton.disabled = true;
-                  
-                        // Prepare form data
-                        const formData = new FormData(form);
-                  
-                        // Send form data using Fetch API
-                        fetch(form.action, {
-                          method: form.method,
-                          body: formData,
-                          headers: {
-                            'Accept': 'application/json'
-                          }
-                        })
-                          .then(response => response.json())
-                          .then(data => {
-                            loading.style.display = 'none'; // Hide the loading message
-                            sentMessage.style.display = 'block'; // Display the success message
-                          })
-                          .catch(error => {
-                            loading.style.display = 'none'; // Hide the loading message
-                            console.error('Error:', error);
-                          })
-                          .finally(() => {
-                            // Re-enable submit button after request completes
-                            submitButton.disabled = false;
-                          });
-                      });
-                    </script>
+                  </form>
+                </div>
+              </div>
+              <script>
+                const form = document.querySelector('.php-email-form');
+                const submitButton = form.querySelector('button[type="submit"]');
+                const sentMessage = form.querySelector('.sent-message');
+                let isFormSubmitted = false;
+
+                form.addEventListener('submit', function (event) {
+                  event.preventDefault();
+
+                  if (isFormSubmitted) {
+                    return; // Exit early if the form has already been submitted
+                  }
+
+                  // Display loading message
+                  const loading = form.querySelector('.loading');
+                  loading.style.display = 'block';
+
+                  // Disable submit button to prevent duplicate submissions
+                  submitButton.disabled = true;
+
+                  // Prepare form data
+                  const formData = new FormData(form);
+
+                  // Send form data using Fetch API
+                  fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                      'Accept': 'application/json'
+                    }
+                  })
+                    .then(response => response.json())
+                    .then(data => {
+                      loading.style.display = 'none'; // Hide the loading message
+                      sentMessage.style.display = 'block'; // Display the success message
+                      isFormSubmitted = true; // Set the flag to true after successful submission
+                    })
+                    .catch(error => {
+                      loading.style.display = 'none'; // Hide the loading message
+                      console.error('Error:', error);
+                    })
+                    .finally(() => {
+                      // Re-enable submit button after request completes
+                      submitButton.disabled = false;
+                    });
+                });
+              </script>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
                       <h5 class="title-left">
