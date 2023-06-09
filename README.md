@@ -1,4 +1,4 @@
-# Akshet Patel
+# Akshet Patel - Personal Portfolio
 
 I am studying MSc in Robotics and Computation at the University College London (UCL), UK having completed my Bachelor of Technology (BTech) focused in Mechatronics Engineering from Manipal University Jaipur.
 
