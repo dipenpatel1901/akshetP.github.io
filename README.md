@@ -17,7 +17,7 @@ Check out my portfolio website: [https://akshetp.github.io/](https://akshetp.git
 <p align='center'>Created & Modified with :heart: by <a href="https://www.linkedin.com/in/akshetpatel/">Akshet Patel</a></p>
 
 
-Connect with me - 
+<!-- Connect with me - 
 
 [<img align="center" alt="akshetp.github.io" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="center" alt="Akshet9 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
@@ -27,4 +27,4 @@ Connect with me -
 [website]: https://akshetp.github.io/
 [twitter]: https://twitter.com/Akshet9
 [linkedin]: https://linkedin.com/in/akshetpatel
-[facebook]: https://www.facebook.com/akshet.patel.14/
+[facebook]: https://www.facebook.com/akshet.patel.14/ -->
