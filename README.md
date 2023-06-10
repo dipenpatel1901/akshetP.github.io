@@ -14,4 +14,4 @@ Check out my portfolio website: [https://akshetp.github.io/](https://akshetp.git
 - Bootstrap template: [DevFolio](https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/)
 - Javascript widget: [Revolvermaps](https://www.revolvermaps.com/)
 
-<p align='center'>Created & Modified with :heart: by <a href="https://www.linkedin.com/in/akshetpatel/">Akshet</a></p>
+<p align='center'>Created & Modified with :heart: by <a href="https://www.linkedin.com/in/akshetpatel/">Akshet Patel</a></p>
