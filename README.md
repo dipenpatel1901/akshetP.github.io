@@ -9,3 +9,9 @@ Apart from that, I love to play the Guitar, Flute and Keyboard, and I actively p
 ## Portfolio
 
 Check out my portfolio website: [https://akshetp.github.io/](https://akshetp.github.io/)
+
+### Acknowledgement
+- Bootstrap template: [DevFolio](https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/)
+- Javascript widget: [Revolvermaps](https://www.revolvermaps.com/)
+
+<p align='center'>Created & Modified with :heart: by <a href="https://www.linkedin.com/in/akshetpatel/">Akshet</a></p>
