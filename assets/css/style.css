@@ -200,6 +200,8 @@ a:hover {
   }
 }
 
+
+
 /*------/ Socials /------*/
 .socials {
   padding: 1.5rem 0;
@@ -1396,3 +1398,97 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+/* Added by ME */
+.info-link {
+  animation: blink 1s infinite;
+  border: 2px solid rgb(0, 140, 255);
+  text-align: center;
+}
+
+.info-text {
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Second Addition */
+.body {
+  margin: 0;
+  padding: 0;
+}
+/* .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+} */
+.row {
+  margin-bottom: 30px;
+}
+.title-box {
+  margin-bottom: 30px;
+}
+.education-item {
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.education-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.education-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.education-subtitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.education-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.education-date {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.education-courses {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.education-course-list {
+  margin-top: 0;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.education-dissertation {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.education-supervisors {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.link {
+  color: #0366d6;
+  text-decoration: none;
+}
+/* .line-mf {
+  height: 2px;
+  width: 100%;
+  background-color: #ccc;
+  margin-bottom: 20px;
+} */
