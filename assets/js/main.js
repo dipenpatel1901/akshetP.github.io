@@ -154,5 +154,21 @@
   });
 
   // Added by ME
+  function fetchLastCommitDateTime() {
+    fetch('https://api.github.com/repos/akshetP/akshetP.github.io/commits?per_page=1')
+      .then(response => response.json())
+      .then(data => {
+        const lastCommitDate = new Date(data[0].commit.author.date);
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZone: 'Europe/London' };
+        const formattedDate = lastCommitDate.toLocaleString('en-US', options);
+        document.getElementById('update-date').textContent = formattedDate;
+      })
+      .catch(error => console.error(error));
+  }
   
+  fetchLastCommitDateTime();
+  
+  
+  
+
 })(jQuery);

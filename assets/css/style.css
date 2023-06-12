@@ -1492,3 +1492,16 @@ footer .credits a {
   background-color: #ccc;
   margin-bottom: 20px;
 } */
+.last-update {
+  text-align: center;
+  margin: 20px;
+}
+
+.last-update p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.last-update #update-date {
+  color: #0000FF; /* Customize the color as per your preference */
+}
