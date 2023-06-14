@@ -114,17 +114,59 @@
   });
 
   /*--/ Star Typed /--*/
+  // if ($('.text-slider').length == 1) {
+  //   var typed_strings = $('.text-slider-items').text();
+  //   var typed = new Typed('.text-slider', {
+  //     strings: typed_strings.split(','),
+  //     typeSpeed: 20,
+  //     loop: true,
+  //     backDelay: 110,
+  //     backSpeed: 30
+  //   });
+  // }
+
+  // if ($('.text-slider').length == 1) {
+  //   var textItems = $('.text-slider-items').text().split(',');
+  //   var index = 0;
+  
+  //   function animateText() {
+  //     $('.intro-subtitle').fadeOut(400, function() {
+  //       $(this).text(textItems[index]).fadeIn(400);
+  //       index++;
+  //       if (index >= textItems.length) {
+  //         index = 0;
+  //       }
+  //     });
+  
+  //     setTimeout(animateText, 3000); // Repeat the animation every 3 seconds
+  //   }
+  
+  //   animateText();
+  // }
+  
   if ($('.text-slider').length == 1) {
     var typed_strings = $('.text-slider-items').text();
     var typed = new Typed('.text-slider', {
       strings: typed_strings.split(','),
-      typeSpeed: 80,
+      typeSpeed: 20,
       loop: true,
-      backDelay: 1100,
-      backSpeed: 30
+      fadeOut: true, // Enable fade-out effect
+      fadeOutClass: 'typed-fade-out', // CSS class for fade-out effect
+      fadeIn: true, // Enable fade-in effect
+      fadeInClass: 'typed-fade-in', // CSS class for fade-in effect
+      fadeOutDelay: 500, // Delay before starting fade-out
+      fadeOutDuration: 500, // Duration of fade-out
+      fadeInDelay: 500, // Delay before starting fade-in
+      fadeInDuration: 500, // Duration of fade-in
+      backSpeed: 30, // Typing speed for erasing
+      backDelay: 800 // Delay between typing and erasing
     });
   }
+  
+  
 
+  
+  
   /*--/ Testimonials owl /--*/
   $('#testimonial-mf').owlCarousel({
     margin: 20,
