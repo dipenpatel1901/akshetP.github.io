@@ -156,7 +156,7 @@
       fadeInClass: 'typed-fade-in', // CSS class for fade-in effect
       fadeOutDelay: 500, // Delay before starting fade-out
       fadeOutDuration: 500, // Duration of fade-out
-      fadeInDelay: 500, // Delay before starting fade-in
+      fadeInDelay: 1500, // Delay before starting fade-in
       fadeInDuration: 500, // Duration of fade-in
       backSpeed: 30, // Typing speed for erasing
       backDelay: 800 // Delay between typing and erasing
