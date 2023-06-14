@@ -1505,3 +1505,21 @@ footer .credits a {
 .last-update #update-date {
   color: #0000FF; /* Customize the color as per your preference */
 }
+/* Add custom styles for the image section */
+.image-section {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.image-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-section .owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Add any other custom styles as needed */
